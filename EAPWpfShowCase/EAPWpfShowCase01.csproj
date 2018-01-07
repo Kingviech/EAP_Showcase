@@ -55,6 +55,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Examples\Asynchronous.cs" />
+    <Compile Include="Examples\AsynchronousPartialResults.cs" />
+    <Compile Include="Examples\AsynchronousProgress.cs" />
     <Compile Include="Examples\AsynchronousStoppable.cs" />
     <Compile Include="Examples\AsynchronousWithException.cs" />
     <Compile Include="MainWindowExample1.cs" />
@@ -76,6 +78,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainWindowExample4.cs" />
+    <Compile Include="MainWindowExample5.cs" />
+    <Compile Include="MainWindowExample6.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

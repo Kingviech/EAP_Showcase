@@ -13,8 +13,14 @@ namespace EAPWpfShowCase.Examples
 
         public int LongRunningTask(int input)
         {
-            Thread.Sleep(input * 1000);
-            return input * input;
+            int result = input;
+            for (int i = 0; i < input; i++)
+            {
+                // Long running calculation...
+                result *= input;
+                Thread.Sleep(1000);
+            }            
+            return result;
         }
 
         public void LongRunningTaskAsync(int input)

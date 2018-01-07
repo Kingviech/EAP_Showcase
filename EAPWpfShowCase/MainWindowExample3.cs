@@ -12,7 +12,6 @@ namespace EAPWpfShowCase
         {
             var asynchronous = new AsynchronousWithException();
 
-            // Same event handler, exception handling is already preset at this handler
             asynchronous.LongRunningTaskCompleted += AsynchronousWithException_LongRunningTaskCompleted;
             asynchronous.LongRunningTaskAsync(5);
             Example3Started.Visibility = Visibility.Visible;

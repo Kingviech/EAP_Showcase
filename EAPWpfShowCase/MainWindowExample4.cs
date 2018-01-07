@@ -14,7 +14,6 @@ namespace EAPWpfShowCase
 
         private void Example4_Click(object sender, RoutedEventArgs e)
         {
-            // Same event handler, exception handling is already preset at this handler
             stoppable = new AsynchronousStoppable();
             stoppable.LongRunningTaskCompleted += AsynchronousStoppable_LongRunningTaskCompleted;
             stoppable.LongRunningTaskAsync(5);
