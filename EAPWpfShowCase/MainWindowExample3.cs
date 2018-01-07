@@ -3,6 +3,9 @@ using System.Windows;
 
 namespace EAPWpfShowCase
 {
+    /// <summary>
+    /// Reused delegate and event args from ex2
+    /// </summary>
     public partial class MainWindow
     {
         private void Example3_Click(object sender, RoutedEventArgs e)

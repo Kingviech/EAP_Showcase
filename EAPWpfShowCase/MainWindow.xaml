@@ -12,10 +12,12 @@
             <RowDefinition Height="28" />
             <RowDefinition Height="28" />
             <RowDefinition Height="28" />
+            <RowDefinition Height="28" />
             <RowDefinition Height="*" />
             <RowDefinition Height="28" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="Auto" />
@@ -30,5 +32,10 @@
         <Label Grid.Row="3" Grid.Column="0" Content="Example 3:"></Label>
         <Button Grid.Column="1" Grid.Row="3" MinWidth="80" Margin="3" Content="Asynchronous Exception" Click="Example3_Click" />
         <Label  Grid.Column="2" Grid.Row="3" Content="Started" Name="Example3Started" Visibility="Hidden"></Label>
+
+        <Label Grid.Row="4" Grid.Column="0" Content="Example 4:"></Label>
+        <Button Grid.Column="1" Grid.Row="4" MinWidth="80" Margin="3" Name="Ex4Start" Content="Start" Click="Example4_Click" />
+        <Button Grid.Column="2" Grid.Row="4" Content="Stop" Margin="3" Name="Ex4Stop" IsEnabled="False" Click="Example4Stop_Click"></Button>
+        <Label  Grid.Column="3" Grid.Row="4" Content="Started" Name="Example4Started" Visibility="Hidden"></Label>
     </Grid>
 </Window>
