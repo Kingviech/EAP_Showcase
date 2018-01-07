@@ -80,6 +80,7 @@
     <Compile Include="MainWindowExample4.cs" />
     <Compile Include="MainWindowExample5.cs" />
     <Compile Include="MainWindowExample6.cs" />
+    <Compile Include="MainWindowExample7.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

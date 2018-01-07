@@ -15,6 +15,7 @@
             <RowDefinition Height="28" />
             <RowDefinition Height="28" />
             <RowDefinition Height="28" />
+            <RowDefinition Height="28" />
             <RowDefinition Height="*" />
             <RowDefinition Height="28" />
         </Grid.RowDefinitions>
@@ -42,11 +43,16 @@
 
         <Label Grid.Row="5" Grid.Column="0" Content="Example 5:"></Label>
         <Button Grid.Column="1" Grid.Row="5" MinWidth="80" Margin="3" Content="Start Progress" Click="Example5_Click" />
-        <ProgressBar Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Margin="7" Value="0" Name="Ex5Progress"></ProgressBar>
+        <ProgressBar Grid.Row="5" Grid.Column="3" Width="100" Margin="7" Value="0" Name="Ex5Progress"></ProgressBar>
 
         <Label Grid.Row="6" Grid.Column="0" Content="Example 6:"></Label>
         <Button Grid.Column="1" Grid.Row="6" MinWidth="80" Margin="3" Content="Start Partial Result" Click="Example6_Click" />
         <Label  Grid.Column="2" Grid.Row="6" Content="Started" Name="Example6Started" Visibility="Hidden"></Label>
         <Label Grid.Column="3" Grid.Row="6" Content="" Name="Example6PartialResult"></Label>
+
+        <Label Grid.Row="7" Grid.Column="0" Content="Example 7:"></Label>
+        <Button Grid.Column="1" Grid.Row="7" MinWidth="80" Margin="3" Name="Ex7Start" Content="Start Backgroundworker" Click="Example7_Click" />
+        <Button Grid.Column="2" Grid.Row="7" MinWidth="80" Margin="3" Name="Ex7Stop" Content="Stop" Click="Ex7Stop_Click" IsEnabled="False" />
+        <ProgressBar Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="1" Margin="7" Value="0" Width="100" Name="Ex7Progress"></ProgressBar>
     </Grid>
 </Window>
